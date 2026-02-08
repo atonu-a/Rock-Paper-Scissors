@@ -1,0 +1,12 @@
+@import "tailwindcss";
+.choice{
+    @apply sm:h-[165px] h-[100px] sm:w-[165px] w-[100px] rounded-[50%] flex items-center justify-center;
+}
+ img{
+    @apply sm:h-[150px] h-[90px] sm:w-[150px] w-[90px] rounded-[50%] object-cover cursor-pointer;
+
+}
+.choice:hover{
+    background-color: #081b31;
+    transition-duration: 200ms;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Rock Paper Scissor</title>
+    
+</head>
+<body class="flex flex-col md:gap-10 sm:gap-5 gap-1 *:text-center">
+    <h1 class="md:text-[48px] sm:text-[32px] text-[28px] py-5 font-black text-[#00FFFF] bg-[#081b31]">Rock Paper Scissors</h1>
+
+
+    <!-- Message -->
+    <div class="msg-container">
+        <h1 id="msg" class="md:text-[32px] text-[24px] text-[#081b31] font-bold md:p-10 p-5 md:mb-0 mb-10">Make your choice</h1>
+    </div>
+
+    <!-- Choice -->
+    <div class="choices flex sm:gap-7.5 gap-1 items-center justify-center">
+        <div id="Rock" class="choice">
+            <img src="images/rock.png" alt="">
+        </div>
+        <div id="Paper" class="choice">
+            <img src="images/paper.png" alt="">
+        </div>
+        <div id="Scissors" class="choice">
+            <img src="images/scissors.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- Score board -->
+    <div class="score-board flex gap-10 justify-center items-center text-[#081b31]">
+        <div id="player-score">
+            <p id="user" class="text-[60px] font-extrabold">0</p>
+            <p class="text-[20px] font-bold">You</p>
+        </div>
+
+        <div id="comp-score">
+            <p id="comp" class="text-[60px] font-extrabold">0</p>
+            <p class="text-[20px] font-bold">Computer</p>
+        </div>
+    </div>
+
+    <script src="app.js "></script>
+</body>
+</html>
